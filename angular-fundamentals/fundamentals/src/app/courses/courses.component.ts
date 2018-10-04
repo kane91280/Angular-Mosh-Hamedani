@@ -9,12 +9,9 @@ import { CoursesService } from '../courses.service';
 export class CoursesComponent implements OnInit {
   school = "RMIT University";
   courses;
-  constructor() { 
-    let coursesService = new CoursesService();
+  constructor(coursesService:CoursesService) {     
     this.courses = coursesService.getCourseList();  
   }
-
-
   ngOnInit() {
   }
 
