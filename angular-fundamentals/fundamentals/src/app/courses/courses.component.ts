@@ -7,11 +7,11 @@ import { CoursesService } from '../courses.service';
   styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent implements OnInit {
-  school = "RMIT";
+  school = "RMIT University";
   courses;
   constructor() { 
     let coursesService = new CoursesService();
-    this.courses = coursesService.getCourseList(); 
+    this.courses = coursesService.getCourseList();  
   }
 
 

@@ -8,6 +8,6 @@ export class CoursesService {
   constructor() { }
   getCourseList = ()=>{
     return ["Computer Science", "Business Information System", 
-    "Accounting", "Economy"];
+    "Accounting", "Economy", "Finance"];
   }
 }
