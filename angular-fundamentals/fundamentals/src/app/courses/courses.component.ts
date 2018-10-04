@@ -10,8 +10,8 @@ export class CoursesComponent implements OnInit {
   school = "RMIT";
   courses;
   constructor() { 
-    /*let coursesService = new CoursesService();
-    this.courses = coursesService.getCourseList();   */
+    let coursesService = new CoursesService();
+    this.courses = coursesService.getCourseList(); 
   }
 
 
