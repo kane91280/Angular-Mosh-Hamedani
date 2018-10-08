@@ -10,6 +10,8 @@ export class CoursesComponent implements OnInit {
   school :string = "Khoa Academy";
   courses : string[];
   isDisabled : boolean = false;
+  badHtml = "Hello <script>alert('Hacked');</script>World";
+
   constructor(coursesService:CoursesService) {     
     this.courses = coursesService.getCourseList();  
   }
