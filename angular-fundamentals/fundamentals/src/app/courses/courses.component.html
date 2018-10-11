@@ -4,6 +4,12 @@
      {{ course }} 
   </li>
 </ul>
-<input id='inputId' type="text" value="Khoa"/>
-<button bind-disabled = "isDisabled">Submit</button>
+<input id='inputId' type="text" value="Khoa"/><br><br>
+<button 
+  bind-disabled = "isDisabled"  
+  [class]="classesToBeIncluded" 
+  [ngClass]="updateHtmlClasses()"
+  >
+    Submit
+</button>
 <div [innerHtml] = "badHtml"></div>

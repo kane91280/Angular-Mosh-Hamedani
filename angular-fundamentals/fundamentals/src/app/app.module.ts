@@ -6,19 +6,23 @@ import { CourseComponent } from './course/course.component';
 import { CoursesComponent } from './courses/courses.component';
 import { CoursesService } from './courses.service';
 import { HeadingComponent } from './heading/heading.component';
+import { FacultiesComponent } from './faculties/faculties.component';
+import { CommonService } from './common.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     CourseComponent,
-    HeadingComponent
+    HeadingComponent,
+    FacultiesComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [
-    CoursesService
+    CoursesService,
+    CommonService
   ],
   bootstrap: [AppComponent]
 })
